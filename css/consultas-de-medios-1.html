@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*una consulta de medios empieza
+        ! una palabra clave en este caso es @media
+        y enseguida va de una funcion multimedia en este caso es (max: width 767px;)y
+        enseguida de llaves.
+        dentro de estas llaves tiene tus estilos es basicamente como una hoja de estilo dentro de otra 
+        cda funcion se resuelve en verdadero o falso, puede hacer que mas de una entidad multimedia se combine mediante operadores logicos 
+        si la entidad multimedia se resuelve en verdadero se aplica el estilo de las llaves. Al escribir
+        consultas de medios, asegurese de cerrar las llaves de la consulta de medios como un todo y 
+        acontinuacion por separado cada regla de estilo
+Ay bastantes de estas caracteristicas multimedia q estan disponibles, por lo tanto
+puede tener un ancho maximo, puede tener un ancho minimo, puede tener una altura, incluso puede orientar la orientacion
+de su dispositivo vertical u horizontal, puede dirigirse solo a las pantallas en lugar de dirigirse solo a la impresion 
+una vez si alguna de estas cosas se evalua como verdadera los estilos contenidos dentro de las llaves de la consulta de medios
+estaran en vigor.
+las mas comunes son:
+
+1.- @media (max-width: 800px) {..} ANCHO MAXIMO 
+
+2.- @media (min-width: 800px) {..} ANCHO MINIMO
+
+3.- @media (orientation: portrait) {..} ORIENTACION 
+
+4.- @media screen {...} PANTALLA 
+
+5.- @media print {...} IMPRERSION
+
+LA FORMA MAS COMUN DE APUNTAR A DIFERENTES DISPOSITIVOS ES POR 
+EL ANCHO DEL DISPOSITIVO.
+LAS CARACTERISTICAS DE MEDIOS SE PUEDEN COMBINAR USANDO OPERADORES LOGICOS POR EWJEMPLO
+
+@media (min-width: 768px) and (mas-width: 991px) {...} // estamos apuntando a cualquier dispositivo 
+que se encuentre dentro de su rango de su ancho, desde 768px hasta 991px, si los 
+dispositivos tienen un ancho menor o mayor que ese, no se aplican los estilos aplicados 
+en esta consulta de  medios.
+
+uno de las operadores mas usados es el operador Y 
+
+- OTRA FORMA DE COMBINAR CARACTERISTICAS MULTIMEDIA ES COLOCAR UNA COMA ENTRE ELLAS 
+  LO QUE BASICAMENTE SE TRADUCIRA EN SER UN OPERADOR OR EJEMPLO:
+
+  @media (max-width: 767px) , (mid-width: 992px) {...}  // en este fragmento de codigo estamos mostrando que estamos
+  apuntando a cualquier dispositivo, cuyo su ancho no sea mayor que 767px o cualquier dispositivo que tenga al menos 
+  992px de ancho.
+
+  Ahora en la practica cuando se acerca el diseño receptivos, el operador logico mas comun es el 
+  operador Y 
+
+  un ejemplo al usarlos en una hoja de estilo es 
+
+  p { color:blue;} //estilos de base. se aplicaran de forma general sin importar el tamaño de pantalla en el que estes viendo el sitio web
+  ...
+  @media (min-width: 1200px) { // empezamos a comenzar a segmentar un tamaño de pantalla en particular cambiando alguna de las propiedades de estilo de base o agregandoles algo mas o talvez quitandole algo 
+    ALGO IMPORTANTE A SEÑALAR cuando se esten uutilizando anchos de tamaños de pantallas en los dispositivos es que ay que tener mucho cuidado DE NO SUPERPONER LIMITES DE RANGO 
+      ...
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+      ...
+  }
+*/
+        @media (max-width: 767px) {
+            p {
+                color:blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

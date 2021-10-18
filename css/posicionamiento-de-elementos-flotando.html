@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento de elementos flotando</title>
+    <style>
+        div {
+            background-color: aqua;
+        }
+        p {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            float: left ;/*que cada cuadro de parrafo flote hacia la izquierda*/
+            margin-right: 10px; /*margen derecho*/
+        }
+        #p1 {
+            background-color: brown;
+            /*float: right; /*le decimos q flote a la derecha*/
+        }
+        #p2 {
+            background-color: chartreuse;
+        }
+        #p3 {
+            background-color: darkmagenta;
+            clear: left; /*aqi le decimos claro q nada fluya a la izquierda*/
+        }
+        #p4 {
+            background-color: gold;
+        }
+        section {
+            clear: left; /*que no flote nada a la izquierda*/
+        }
+    </style>
+</head>
+<body>
+    <h1>elementos flotando</h1>
+
+    <div>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <section>Este es el contenido regular que 
+            continúa después de los cuadros de párrafo.</section>
+    </div>
+</body>
+</html>

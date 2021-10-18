@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--etiqueta no es de cierre, el DOCTIPE quiere decir que es compatible osea de modo estandar-->
+<html lang="es">
+<!--etqueta par, encierra todo el documento de html-->
+
+<head>
+    <!--define la cabecera del documento , describe el contenido principal (metadatos,scripts, estilos)-->
+    <meta charset="UTF-8">
+    <!--meta:etiqueta independiente, define los caracteres q tendra la pagina-->
+    <title>Listas en html</title>
+    <!--titulo de la pagina  de la pagina, sin el, el html no sera valido-->
+</head>
+
+<body>
+    <h1>lista desordenada</h1>
+    <!--LISTASNO ORDENADAS-->
+    <div>
+        <!--define una división. Esta etiqueta permite agrupar varios elementos de bloque (párrafos, encabezados, listas, tablas, divisiones, etc)-->
+        LISTA DE COMPRAS NO ORDENADA
+        <ul>
+            <!--etiqueta de lista no ordenada-->
+            <li>chocolate</li>
+            <!--etiqueta de lista -->
+            <li>azucar</li>
+            <li>te</li>
+            <li>cereales <!--podemos hacer otra sublista dentro de la lista -->
+                <ul>
+                    <li>leche</li>
+                    <li>choco milk</li>
+                    <li>granola</li>
+                </ul>
+            </li>
+            <li>avena</li>
+        </ul>
+    </div>
+    <!--LISTAS ORDENADAS-->
+    <div>
+        LISTA DE COMPRAS ORDENADA
+        <ol> <!--lista ordenada-->
+            <li>fresas</li> <!--etiqueta de listas-->
+            <li>gelatina <!--podemos hacer una sublistaordenada dentro de una -->
+                <ol>
+                    <li>hervir agua</li>
+                    <li>vaciar gelatina</li>
+                    <li>dejar enfriar</li>
+                </ol>
+            </li>
+            <li>crema para batir</li>
+        </ol>
+    </div>
+</body>
+
+</html>

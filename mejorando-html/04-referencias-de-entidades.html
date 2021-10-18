@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--etiqueta no es de cierre, el DOCTIPE quiere decir que es compatible osea de modo estandar-->
+<html lang="es">
+<!--etqueta par, encierra todo el documento de html-->
+
+<head>
+    <!--define la cabecera del documento , describe el contenido principal (metadatos,scripts, estilos)-->
+    <meta charset="UTF-8">
+    <!--meta:etiqueta independiente, define los caracteres q tendra la pagina-->
+    <title>REFERENCIAS DE ENTIDADES DE CARACTERES</title>
+    <!--titulo de la pagina  de la pagina, sin el el hml no sera valido-->
+</head>
+
+<body>
+    <!--etiqueta par, cuerpo del sitio, aqui va todo lo que sera visible por el usuario-->
+   <!--LAS REFERENCIAS DE ENTIDADES DE CARACTERES
+- Si queremos que el navegador interprete caracteres HTML especiales como contenido regular,
+ necesitamos una forma de decirle al navegador que no los interprete como HTML.
+Específicamente, hay tres caracteres que siempre deben ser escapados para asegurarse 
+de que no causen problemas de renderizado, ya sea de inmediato o en la línea.
+1.- &lt; representa  <
+2.- &amp; representa &
+3.- &gt; representa >
+4.- &copy; representa el simbolo de derecho de autor
+5.- &nbsp; no romper espacios entre las palabras, siempre permanecer en la misma linea
+6.- &quot; para escribir un correo electronico, se pone al principio y al final de cada texto-->
+<H1>CARACTERES REFERNCIAS DE ENTIDADES EN HTML &lt;PARA QUE NO LOS TOME COMO ETIQUETAS &amp; &gt;</H1>
+
+<P>
+    &quot;Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    Maiores consequatur eveniet dolores ad asperiores impedit repellat, 
+    cum aliquam quia excepturi commodi est? Sapiente, optio? Magnam blanditiis 
+    impedit expedita&nbsp;placeat&nbsp;accusamus.&quot;
+</P>
+<p> la granja el pollon 1950 &copy; copyrigth</p>
+
+</body>
+
+</html>

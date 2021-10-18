@@ -1,0 +1,6 @@
+p {  /* la p es un selector q es la etiqueta de parrafo en html*/
+    /*declaracion css*/
+    color: aquamarine; /*consta de dos valores la propiedad q es color y el valor que es el color q asignamos*/
+    font-size: 20px; /*tamaño de fuente*/
+    width: 200px; /*ancho*/
+}

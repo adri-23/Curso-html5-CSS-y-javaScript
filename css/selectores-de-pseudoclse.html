@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capacidad de estilo para dar interactividad </title>
+    <style>
+        header li { /*encabezado li y vamos a desactivar los puntos de viñeta diciendo estilo ninguno*/
+            list-style: none; /*le quitamos el estilo*/
+        }
+
+        /*le damos forma a nuestros links*/
+        a:link, a:visited {
+            text-decoration: none; /*quitamos decoracion */
+            background-color: green; /*color de fondo*/
+            border: 1px solid blue; /*solido frente a guion*/
+            color:black; /*color de texto*/
+            display: block;
+            width: 200px; /*ancho*/
+            text-align: center;/*texto en el centro*/
+            margin-bottom: 1px; /*margen inferior*/
+
+        }
+/*haremos un flotador y un activo 
+el flotador: es cuando pasamos el cursor y cambia de color */
+        a:hover, a:active {
+            background-color: red;
+            color: purple;
+        }
+
+        header li:nth-child(2) { /*quiere decir q en el header, en la listas modificaremos el segundo hijo */
+            font-size: 24px;
+        }
+/*modificaremos los div*/
+        section div:nth-child(odd) { /*odd es impar.. en section de los div modificaremos a todos los hijos impares */
+            background-color: gray;
+
+        }
+/*en section de los div modificaremos el 4 hijo, pero tambien quiero q sea flotante osea q cambie el color */
+        section div:nth-child(4):hover{
+            background-color: green;
+            cursor: pointer; /*cursor a puntero*/
+        }
+
+    </style>
+</head>
+<body>
+    <!--podremos cambiar el color cuando pase el raton sobre e elemento-->
+    <!--tipos de pseudoclase que existen
+1.-  :link  representa un elemento que aún no se ha visitado.
+2.-  :visited representa enlaces que el usuario ya ha visitado 
+3.-  :hover coincide cuando el usuario interactúa con un elemento con un dispositivo señalador, pero no necesariamente lo activa.
+4.-  :active  representa un elemento (como un botón) que el usuario está activando.  Cuando se usa un mouse, la "activación" generalmente comienza cuando el usuario presiona el botón primario del mouse y termina cuando se suelta. La pseudo-clase :active se usa comúnmente en los elementos <a> y <button>, pero también se puede usar en otros elementos.
+5.-  :nth-child(...)  oincide con uno o más elementos en función de su posición entre un grupo de hermanos.
+-->
+
+<h1>selectores de pseudoclases</h1>
+<header>
+    <ul>
+        <li><a href="/">casa</a> </li>
+        <li><a href="/">carro</a></li>
+    </ul>
+</header>
+
+<section>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+</section>
+</body>
+</html>

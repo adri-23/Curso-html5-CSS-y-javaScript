@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { /*reestablecemos el tamaño de la caja*/
+            box-sizing: border-box;
+            margin: 0; /*margen*/
+            padding: 0; /*relleno*/
+        }
+        h1 {
+            margin-bottom: 15px; /*margen para empujar hacia abajo el contenid de la caja*/
+        }
+
+        div#container {
+            background-color: coral; /*color*/
+            position: relative; /*posicion relativa*/
+            top: 6px; /*movemos el contenedor hacia abajo*/
+        }
+        p {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black; /*el tipo de borde color negro*/
+            margin-bottom: 15px; /*margen inferior */
+        }
+
+        #p1 {
+            background-color: brown;
+            position: relative; /*todos los elementos van a ser relativos a su posicion normal de flujo de documento */
+            top: 65px; /*hacia abajo*/
+            left: 65; /*a la izquierda*/
+        }
+        #p2 {
+            background-color: blue;
+        }
+        /*posicionamiento absoluto*/
+        #p3 {
+            background-color: black;
+            position: absolute; /*posicion absoluta*/
+            top: 0; /*hacia abajo*/
+            left: 0; /*izquierda*/
+        }
+        #p4 {
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>posicionamiento relativo y absoluto de elementos</h1>
+
+    <div id="container">
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+    </div>
+</body>
+</html>
